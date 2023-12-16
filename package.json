@@ -2,7 +2,8 @@
   "scripts": {
     "format": "prettier --write .",
     "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css && cp src/index.html dist/index.html"
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css && cp src/index.html dist/index.html",
+    "deploy": "scp -r ./dist/* ubuntu@arm1:~/traefik-proxy/apps/nginx-with-volume/website/"
   },
   "devDependencies": {
     "prettier": "^3.1.1",
