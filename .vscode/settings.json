@@ -5,5 +5,8 @@
   // Recommended config for the extension
   "css.validate": false,
   "less.validate": false,
-  "scss.validate": false
+  "scss.validate": false,
+  "liveServer.settings.port": 5500,
+  "liveServer.settings.root": "/dist/",
+  "liveServer.settings.host": "localhost"
 }
